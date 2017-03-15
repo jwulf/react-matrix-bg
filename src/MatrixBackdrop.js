@@ -29,7 +29,7 @@ class MatrixBackdrop extends Component {
 
   render() {
     const styles = {
-      container: {
+      outerWrapper: {
         position: 'relative',
         width: '100%',
         height: '100%',
@@ -41,20 +41,23 @@ class MatrixBackdrop extends Component {
         height: '100%',
         overflow: 'hidden',
       },
-      content: Object.assign({}, {
+      innerWrapper: {
         position: 'absolute',
         width: '100%',
         height: '100%',
-      }, this.props.settings.style),
+      },
+      content: this.props.settings.style,
     }
 
     return (
-      <div className="MatrixBackdrop" style={styles.container}>
+      <div className="MatrixBackdrop" style={styles.outerWrapper}>
         <div style={styles.matrix}>
           {this.state.cells}
         </div>
-        <div style={styles.content}>
-          {this.props.children}
+        <div style={styles.innerWrapper}>
+          <div style={styles.content}>
+            {this.props.children}
+          </div>
         </div>
       </div>
     )
