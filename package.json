@@ -5,6 +5,11 @@
   "devDependencies": {
     "react-scripts": "0.9.4"
   },
+  "author": {
+    "name": "Tim Marwick",
+    "email": "tim@magikcraft.io",
+    "url": "https://www.magikcraft.io"
+  },
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
