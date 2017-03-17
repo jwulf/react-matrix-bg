@@ -1,6 +1,6 @@
 {
   "name": "matrix-bg",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "devDependencies": {
     "react-scripts": "0.9.4"
